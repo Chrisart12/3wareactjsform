@@ -41,6 +41,7 @@ class Form extends Component {
         const { users, name , message} = this.state
 
         let sendMessage;
+        
         if(message) {
             sendMessage =<div className="alert alert-danger" role="alert">Cet utilisateur existe déjà</div>
         } else {

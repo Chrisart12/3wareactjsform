@@ -1,1 +1,6 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+@import './sasss/utils/variables';
+@import './sasss/bases/base';
+@import './sasss/pages/connection';
+
