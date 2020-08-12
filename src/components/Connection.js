@@ -7,14 +7,16 @@ class Connection extends Component {
         super(props)
     
         this.state = {
-            users: [
-                {id: 1, firstname: "issa1", email: "chrisissifou1@gmail.com", password: "1111"},
-                {id: 2, firstname: "issa2", email: "chrisissifou2@gmail.com", password: "2222"},
-                {id: 3, firstname: "issa3", email: "chrisissifou3@gmail.com", password: "3333"}
-            ],
+            
             email: "",
             password: ""
         }
+
+        this.users = [
+            {id: 1, firstname: "issa1", email: "chrisissifou1@gmail.com", password: "1111"},
+            {id: 2, firstname: "issa2", email: "chrisissifou2@gmail.com", password: "2222"},
+            {id: 3, firstname: "issa3", email: "chrisissifou3@gmail.com", password: "3333"}
+        ]
 
         this.checkUser = ""
     }
@@ -27,7 +29,7 @@ class Connection extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        this.checkUser = this.state.users.filter(user => 
+        this.checkUser = this.users.filter(user => 
             (user.email === this.state.email) && (user.password === this.state.password)
             )
         
